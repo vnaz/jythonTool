@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/autocomplete-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jython-standalone-2.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/languagesupport-r795.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rstaui-2.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rsyntaxtextarea-2.5.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
