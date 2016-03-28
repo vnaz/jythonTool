@@ -11,6 +11,9 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/rstaui-2.0.7.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/rsyntaxtextarea-2.5.8.jar" path-in-jar="/" />
       <element id="module-output" name="Tool" />
+      <element id="directory" name="jython">
+        <element id="dir-copy" path="$PROJECT_DIR$/src/jython" />
+      </element>
     </root>
   </artifact>
 </component>

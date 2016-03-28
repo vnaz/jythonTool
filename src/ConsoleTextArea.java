@@ -1,12 +1,12 @@
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.FontMetrics;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ActionMap;
@@ -19,20 +19,9 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultEditorKit;
-import javax.swing.text.Document;
-import javax.swing.text.Element;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.Style;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyleContext;
-import javax.swing.text.StyledDocument;
-import javax.swing.text.TabSet;
-import javax.swing.text.TabStop;
-import javax.swing.text.TextAction;
-import javax.swing.text.Utilities;
+import javax.swing.text.*;
 
+import org.fife.ui.autocomplete.*;
 import org.fife.ui.rsyntaxtextarea.RSyntaxDocument;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rsyntaxtextarea.SyntaxScheme;
@@ -42,10 +31,10 @@ import org.fife.ui.rtextarea.RTextArea;
 
 abstract class ConsoleTextArea extends JTextPane {
 
-    public static final Color DEFAULT_PROMPT_FG		= new Color(0,192,0);
-    public static final Color DEFAULT_STDOUT_FG		= Color.blue;
-    public static final Color DEFAULT_STDERR_FG		= Color.red;
-    public static final Color DEFAULT_EXCEPTION_FG	= new Color(111, 49, 152);
+    public static final Color DEFAULT_PROMPT_FG		= new Color(0,150,0);
+    public static final Color DEFAULT_STDOUT_FG		= Color.black;
+    public static final Color DEFAULT_STDERR_FG		= new Color(200,50,50);
+    public static final Color DEFAULT_EXCEPTION_FG	= new Color(100, 50, 150);
 
     public static final String PROPERTY_PROCESS_RUNNING	= "ProcessRunning";
 
